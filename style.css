@@ -1,0 +1,604 @@
+/* === Existing Styles (Kept Intact) === */
+
+.d-none-improtant{
+	display: none !important;
+}
+.single_variation_wrap .awcdp-deposits-wrapper  {
+	display: none;
+}
+.awcdp-deposits-option .awcdp-radio{
+	min-height: 55px;
+}
+.top-menu-sidebar .menu-item{
+	text-align: left;
+	font-size: 22px;
+}
+.top-menu-sidebar .menu-item a{
+	font-size: 16px;
+}
+#sns_header .menu-sidebar .sidebar-content{
+	padding:0;
+}
+
+/* ===== My Account (Login / Register) — visual refresh ===== */
+.woocommerce-account .u-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+@media (max-width: 900px){
+  .woocommerce-account .u-columns { grid-template-columns: 1fr; }
+}
+.woocommerce-account .u-columns .u-column1,
+.woocommerce-account .u-columns .u-column2 {
+  background: #fff;
+  border: 1px solid #e8e8ee;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(2,6,23,.06);
+  padding: 28px 28px 24px;
+}
+.woocommerce-account .u-columns h2 {
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 0 0 18px;
+  letter-spacing: .2px;
+}
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea,
+.woocommerce form .form-row select {
+  border: 1px solid #dfe3ea;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fafbfe;
+}
+.woocommerce form .form-row { margin-bottom: 14px; }
+.woocommerce .lost_password { margin-top: 8px; }
+.woocommerce button.button,
+.woocommerce a.button,
+.woocommerce input.button {
+  background: #ff6a00;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+}
+.woocommerce button.button:hover,
+.woocommerce a.button:hover,
+.woocommerce input.button:hover { filter: brightness(.92); }
+
+.nsl-container .nsl-button {
+  width: 100%;
+  border-radius: 10px !important;
+  border: 1px solid #e8e8ee !important;
+  padding: 10px 14px !important;
+  box-shadow: 0 8px 20px rgba(2,6,23,.05);
+  margin: 10px 0 14px !important;
+}
+.nsl-container .nsl-button svg { height: 18px; width: 18px; }
+.nsl-container .nsl-separator {
+  margin: 10px 0 16px;
+  color: #9aa3b2;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  font-size: 12px;
+}
+.woocommerce-account .u-column2 .form-row .input-checkbox { margin-right: 8px; }
+
+.woocommerce-account .u-columns{
+  position: relative;
+  align-items: stretch;
+}
+@media (min-width: 901px){
+  .woocommerce-account .u-columns::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 12px;
+    bottom: 12px;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, #e9ecf3 8%, #e9ecf3 92%, transparent);
+    z-index: 0;
+  }
+  .woocommerce-account .u-columns .u-column1,
+  .woocommerce-account .u-columns .u-column2{
+    position: relative;
+    z-index: 1;
+  }
+}
+.nsl-container{display:block;}
+.nsl-container .nsl-button{
+  width: 100%;
+  border-radius: 10px !important;
+  border: 1px solid #e8e8ee !important;
+  padding: 12px 14px !important;
+  margin: 12px 0 16px !important;
+  box-shadow: 0 8px 20px rgba(2,6,23,.05);
+}
+.nsl-container .nsl-button .nsl-button-label-container{
+  flex: 1 1 auto;
+  justify-content: center;
+}
+.nsl-container .nsl-button svg{height:18px;width:18px}
+
+.woocommerce-account .u-columns .u-column1,
+.woocommerce-account .u-columns .u-column2{
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.woocommerce-account .u-columns .u-column1:hover,
+.woocommerce-account .u-columns .u-column2:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(2,6,23,.10);
+}
+.woocommerce form .form-row input.input-text:focus,
+.woocommerce form .form-row textarea:focus,
+.woocommerce form .form-row select:focus{
+  outline: 0;
+  border-color: #ff6a00;
+  box-shadow: 0 0 0 3px rgba(255,106,0,.12);
+}
+.woocommerce button.button,
+.woocommerce a.button,
+.woocommerce input.button{
+  transition: transform .08s ease, filter .15s ease;
+}
+.woocommerce button.button:active,
+.woocommerce a.button:active,
+.woocommerce input.button:active{
+  transform: translateY(1px);
+}
+.nsl-container .nsl-separator{
+  margin: 8px 0 14px;
+  color: #8b96a7;
+  text-transform: uppercase;
+  letter-spacing: .32px;
+  font-size: 12px;
+}
+
+/* ===== Fix product buttons visibility ===== */
+.products .product .product-buttons,
+.woocommerce ul.products li.product .product-buttons {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+.products .product:hover .product-buttons,
+.woocommerce ul.products li.product:hover .product-buttons {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.products .product .button,
+.woocommerce ul.products li.product .button {
+  background: #f4f4f4;
+  color: #111;
+  border-radius: 6px;
+  padding: 10px 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.products .product .button:hover,
+.woocommerce ul.products li.product .button:hover {
+  background: #ff6a00;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.products .product .product-buttons,
+.woocommerce ul.products li.product .product-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.woocommerce ul.products li.product,
+.woocommerce ul.products li.product .product,
+.woocommerce ul.products li.product .product-inner,
+.woocommerce ul.products li.product .product-wrapper,
+.woocommerce ul.products li.product .product-content {
+  overflow: visible !important;
+  position: relative;
+}
+.woocommerce ul.products li.product .product-buttons,
+.woocommerce ul.products li.product .product-actions,
+.woocommerce ul.products li.product .buttons-wrapper {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: translateY(10px) !important;
+  z-index: 3;
+}
+.woocommerce ul.products li.product:hover .product-buttons,
+.woocommerce ul.products li.product:hover .product-actions,
+.woocommerce ul.products li.product:hover .buttons-wrapper {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
+
+/* === NEW ADDITION: Make header logo larger === */
+#header .logo img,
+.header-logo img,
+#sns_header .logo img {
+  max-height: 70px !important;   /* increase logo height */
+  width: auto !important;        /* keep proportions */
+  transition: all 0.3s ease;
+}
+
+/* Optional: Adjust header height for larger logo */
+#header,
+#sns_header,
+.header-wrapper {
+  min-height: 110px !important;
+  align-items: center;
+}
+
+/* Ensure it scales well on mobile */
+@media (max-width: 768px) {
+  #header .logo img,
+  .header-logo img,
+  #sns_header .logo img {
+    max-height: 70px !important;
+  }
+}
+
+/* Style the new account icon to match others */
+.header-right .mini-account {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px;
+    position: relative;
+}
+
+.header-right .mini-account i {
+    font-size: 20px; /* Same size as search & cart */
+    color: #fff;     /* White to match existing icons */
+}
+
+/* Separator styling (same as other icons) */
+.header-right .mini-account .separator {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.3); /* subtle line */
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.header-right .mini-account a.tongle {
+    display: flex;
+    align-items: center;
+}
+
+/* ===== Mobile polish for DSK + WooCommerce ===== */
+@media (max-width: 768px){
+
+  /* 1) Header spacing + logo */
+  #sns_header { padding: 8px 12px !important; }
+  #sns_header .logo img { max-height: 36px !important; width: auto !important; }
+
+  /* 2) Tighter topbar/menu icons */
+  #sns_header .header-right, #sns_header .header-icons { gap: 10px !important; }
+  #sns_header .header-icons a { padding: 6px !important; }
+
+  /* 3) Product grid: 2-up layout, neat gaps */
+  .woocommerce ul.products { 
+    display: grid !important; 
+    grid-template-columns: 1fr 1fr !important; 
+    gap: 14px !important; 
+  }
+  .woocommerce ul.products li.product { margin: 0 !important; }
+
+  /* 4) Product card: remove hover-only effects on touch, simplify */
+  .woocommerce ul.products li.product .product-image,
+  .woocommerce ul.products li.product .product-thumbnail { transform: none !important; }
+  .woocommerce ul.products li.product .star-rating { transform: none !important; }
+
+  /* 5) Title & price readable */
+  .woocommerce ul.products li.product .woocommerce-loop-product__title{
+    font-size: 13.5px !important; line-height: 1.35 !important; min-height: auto !important;
+  }
+  .woocommerce ul.products li.product .price{ font-size: 14px !important; font-weight: 700; }
+
+  /* 6) Actions: stack neatly; big tap targets */
+  .woocommerce ul.products li.product .add_to_cart_button,
+  .woocommerce ul.products li.product .button.product_type_variable,
+  .woocommerce ul.products li.product .button.product_type_simple{
+    display: block !important;
+    width: 100% !important;
+    margin: 10px 0 6px !important;
+    padding: 11px 10px !important;
+    border-radius: 10px; font-weight: 700; text-transform: uppercase;
+    background: #ff6a00; color: #fff !important;
+  }
+  /* Hide the tiny icon row on mobile (optional – less clutter) */
+  .woocommerce ul.products li.product .product-actions,
+  .woocommerce ul.products li.product .product-buttons,
+  .woocommerce ul.products li.product .buttons-wrapper{ display: none !important; }
+
+  /* 7) Single product: comfy padding & sticky CTA */
+  .single-product .summary { padding: 12px !important; }
+  .single-product .product_title { font-size: 20px !important; }
+  .single-product .price { font-size: 18px !important; }
+
+  /* Sticky add-to-cart bar for mobile (simple CSS version) */
+  .single-product .mobile-sticky-add {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 999;
+    background: #fff; padding: 10px 12px; box-shadow: 0 -6px 20px rgba(0,0,0,.08);
+  }
+  .single-product .mobile-sticky-add .button {
+    width: 100%; padding: 12px 14px; border-radius: 10px; 
+    background: #ff6a00; color: #fff !important; font-weight: 700; text-transform: uppercase;
+  }
+
+  /* 8) Forms & inputs bigger for thumbs */
+  input[type="text"], input[type="email"], input[type="tel"], select{
+    height: 44px !important; border-radius: 10px !important;
+  }
+
+  /* 9) Slider bullets & banners */
+  .rev_slider_wrapper, .tp-revslider-mainul { max-height: 54vh !important; }
+}
+
+/* Optional: Make /my-account/ cards full width on mobile */
+@media (max-width: 900px){
+  .woocommerce-account .u-columns{ grid-template-columns: 1fr !important; gap: 16px !important; }
+}
+
+/* ===== HOME PAGE MOBILE OPTIMIZATION ===== */
+@media (max-width: 767px) {
+
+  /* Make rows less tall on mobile */
+  .home .vc_custom_1531993966727,
+  .home .vc_custom_1531994012974 {
+    margin-bottom: 40px !important;
+  }
+
+  /* Stack columns full-width nicely (for themes using col-phone-12) */
+  .home .col-phone-12 {
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 15px;
+  }
+
+  /* Banner product text smaller & cleaner */
+  .home .sns-banner-product,
+  .home .sns_banner_product {
+    padding: 15px !important;
+  }
+
+  .home .sns-banner-product .title,
+  .home .sns_banner_product .title {
+    font-size: 14px !important;
+  }
+
+  .home .sns-banner-product .price,
+  .home .sns_banner_product .price {
+    font-size: 14px !important;
+  }
+
+  .home .sns-banner-product .button,
+  .home .sns_banner_product .button {
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+  }
+
+  /* Section headings (Catalogue, Our Partnered Brands, etc.) */
+  .home .wpb_heading,
+  .home .row-notextra h3,
+  .home .row-newsletter h3 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Reduce empty spaces in sections */
+  .home .vc_empty_space {
+    height: 15px !important;
+  }
+
+  /* Popup video: make height reasonable on mobile */
+  .home .sns-popup-video,
+  .home .sns_popup_video {
+    max-height: 320px !important;
+  }
+
+  /* Newsletter section padding & text */
+  .home .row-newsletter {
+    padding-top: 50px !important;
+    padding-bottom: 70px !important;
+    text-align: center;
+  }
+
+  .home .row-newsletter .wpb_text_column {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Partner brand logos - tighter */
+  .home .have-padding .banner-1-2 {
+    padding: 5px !important;
+  }
+}
+/* ===== HOME PAGE MOBILE OPTIMIZATION ===== */
+@media (max-width: 767px) {
+
+  /* Make rows less tall on mobile */
+  .home .vc_custom_1531993966727,
+  .home .vc_custom_1531994012974 {
+    margin-bottom: 40px !important;
+  }
+
+  /* Stack columns full-width nicely (for themes using col-phone-12) */
+  .home .col-phone-12 {
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 15px;
+  }
+
+  /* Banner product text smaller & cleaner */
+  .home .sns-banner-product,
+  .home .sns_banner_product {
+    padding: 15px !important;
+  }
+
+  .home .sns-banner-product .title,
+  .home .sns_banner_product .title {
+    font-size: 14px !important;
+  }
+
+  .home .sns-banner-product .price,
+  .home .sns_banner_product .price {
+    font-size: 14px !important;
+  }
+
+  .home .sns-banner-product .button,
+  .home .sns_banner_product .button {
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+  }
+
+  /* Section headings (Catalogue, Our Partnered Brands, etc.) */
+  .home .wpb_heading,
+  .home .row-notextra h3,
+  .home .row-newsletter h3 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Reduce empty spaces in sections */
+  .home .vc_empty_space {
+    height: 15px !important;
+  }
+
+  /* Popup video: make height reasonable on mobile */
+  .home .sns-popup-video,
+  .home .sns_popup_video {
+    max-height: 320px !important;
+  }
+
+  /* Newsletter section padding & text */
+  .home .row-newsletter {
+    padding-top: 50px !important;
+    padding-bottom: 70px !important;
+    text-align: center;
+  }
+
+  .home .row-newsletter .wpb_text_column {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Partner brand logos - tighter */
+  .home .have-padding .banner-1-2 {
+    padding: 5px !important;
+  }
+}
+
+/* ===================================================
+   LEADING EDGE – FEATURED PRODUCT CAROUSEL (REUSABLE)
+   Usage class: le-featured-carousel
+=================================================== */
+
+/* Desktop – keep default grid */
+.le-featured-carousel ul.products {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+  /* Individual product card */
+  .le-featured-carousel ul.products li.product {
+    flex: 0 0 80%;
+    max-width: 80%;
+    scroll-snap-align: start;
+  }
+
+  /* Product image */
+  .le-featured-carousel ul.products li.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  /* Title */
+  .le-featured-carousel ul.products li.product .woocommerce-loop-product__title {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 8px 0 4px;
+  }
+
+  /* Price */
+  .le-featured-carousel ul.products li.product .price {
+    font-size: 14px;
+  }
+
+  /* Remove bottom margin that causes jump */
+  .le-featured-carousel ul.products li.product {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* ===================================================
+   LEADING EDGE – FEATURED PRODUCT CAROUSEL (FIXED)
+   Shows 2 products on phone instead of 1 big card
+=================================================== */
+
+@media (max-width: 768px) {
+
+  .le-featured-carousel ul.products {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* ✅ KEY FIX: 2 cards visible */
+  .le-featured-carousel ul.products li.product {
+    flex: 0 0 48%;
+    max-width: 48%;
+    scroll-snap-align: start;
+    margin-bottom: 0 !important;
+  }
+
+  .le-featured-carousel ul.products li.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .le-featured-carousel ul.products li.product .woocommerce-loop-product__title {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .le-featured-carousel ul.products li.product .price {
+    font-size: 13px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+
+  .le-featured-carousel ul.products li.product {
+    flex: 0 0 52%;
+    max-width: 52%;
+  }
+
+  .le-featured-carousel ul.products li.product .woocommerce-loop-product__title {
+    font-size: 12px;
+  }
+
+  .le-featured-carousel ul.products li.product .price {
+    font-size: 12px;
+  }
+}
+

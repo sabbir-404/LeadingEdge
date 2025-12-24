@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shop By Categories</title>
+
+<style>
+/* ===============================
+   SHOP BY CATEGORIES (ISHO STYLE)
+================================ */
+
+.shop-by-categories {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+}
+
+.shop-by-categories h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+/* Grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 40px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Item */
+.category-item {
+  text-decoration: none;
+  color: #111;
+  cursor: pointer;
+}
+
+/* Circle */
+.category-circle {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 12px;
+  background: #fde6d7; /* soft peach */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Image */
+.category-circle img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+/* Label */
+.category-label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Hover */
+.category-item:hover .category-circle {
+  transform: translateY(-6px);
+  background: #f9d6be;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1024px) {
+  .category-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-by-categories {
+    padding: 60px 16px;
+  }
+
+  .shop-by-categories h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+  }
+
+  .category-circle {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 15px;
+  }
+
+  .category-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .category-label {
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="shop-by-categories">
+  <h2>Shop By Categories</h2>
+
+  <div class="category-grid">
+
+    <!-- TEMP ITEMS (replace image src later) -->
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Sofa" alt="Sofas">
+      </div>
+      <div class="category-label">Sofas</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Chair" alt="Chairs">
+      </div>
+      <div class="category-label">Chairs</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Table" alt="Tables">
+      </div>
+      <div class="category-label">Tables</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Storage" alt="Storage">
+      </div>
+      <div class="category-label">Height Adjustable Table</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Office" alt="Boss Table">
+      </div>
+      <div class="category-label">Boss Table</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Bedroom" alt="Chandelier">
+      </div>
+      <div class="category-label">Chandelier</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Light" alt="Floor Lamp">
+      </div>
+      <div class="category-label">Floor Lamp</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Decor" alt="Hardware">
+      </div>
+      <div class="category-label">Hardware</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Kitchen" alt="Kitchen">
+      </div>
+      <div class="category-label">Kitchen</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Kids" alt="Wardrobe">
+      </div>
+      <div class="category-label">Wardrobe</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Outdoor" alt="Outdoor">
+      </div>
+      <div class="category-label">Smart Appliances</div>
+    </div>
+
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Smart" alt="Folding Furniture">
+      </div>
+      <div class="category-label">Folding Furniture</div>
+    </div>
+    <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Smart" alt="Track Light">
+      </div>
+      <div class="category-label">Track Light</div>
+    </div>
+        <div class="category-item">
+      <div class="category-circle">
+        <img src="https://via.placeholder.com/150?text=Smart" alt="Chair">
+      </div>
+      <div class="category-label">Office Chair</div>
+    </div>
+  </div>
+</section>
+
+<script>
+/* No JS needed for now.
+   Reserved for future enhancements
+   (e.g. analytics, animations, filtering) */
+</script>
+
+</body>
+</html>

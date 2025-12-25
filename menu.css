@@ -1,0 +1,124 @@
+/* ===== LEADING EDGE – MINIMAL MEGA MENU TYPOGRAPHY ===== */
+
+/* Overall dropdown container */
+.sns-megamenu,
+.sns-mega-menu,
+.dropdown-menu {
+  padding: 36px 40px !important;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+  border-radius: 10px;
+}
+
+/* Column spacing */
+.sns-megamenu .menu-item,
+.dropdown-menu .menu-item {
+  margin-bottom: 6px;
+}
+
+/* Column titles (Living Room, Bedroom, etc.) */
+.sns-megamenu > li > a,
+.dropdown-menu > li > a {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 0.4px;
+  margin-bottom: 14px;
+  display: inline-block;
+  pointer-events: none; /* makes it look like a heading */
+}
+
+/* Submenu list */
+.sns-megamenu ul,
+.dropdown-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual item links */
+.sns-megamenu ul li a,
+.dropdown-menu ul li a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.9;
+  padding: 2px 0;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect – subtle & premium */
+.sns-megamenu ul li a:hover,
+.dropdown-menu ul li a:hover {
+  color: #ff6a00;
+  text-decoration: none;
+}
+
+/* Remove bullets if any */
+.sns-megamenu ul li,
+.dropdown-menu ul li {
+  list-style: none;
+}
+
+/* Prevent heavy separators */
+.sns-megamenu hr,
+.dropdown-menu hr {
+  display: none;
+}
+/* ===============================
+   LEADING EDGE – MINIMAL MEGA MENU
+   =============================== */
+
+/* Target all DSK mega menu dropdowns */
+#sns_mainmenu .sub-content {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Column titles (h4.megamenu-title) */
+#sns_mainmenu .megamenu-title {
+  margin: 0 0 12px;
+}
+
+#sns_mainmenu .megamenu-title a {
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #111;
+  text-transform: none;
+  pointer-events: auto;
+}
+
+/* Submenu links */
+#sns_mainmenu .sub-menu li a,
+#sns_mainmenu .columns > li > a,
+#sns_mainmenu .columns > li span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.9;
+  padding: 2px 0;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect */
+#sns_mainmenu .sub-menu li a:hover,
+#sns_mainmenu .columns > li > a:hover {
+  color: #ff6a00;
+  text-decoration: none;
+}
+
+/* Remove bullets & clutter */
+#sns_mainmenu ul li {
+  list-style: none;
+}
+
+/* Increase column breathing space */
+#sns_mainmenu .columns > li {
+  margin-bottom: 14px;
+}
+
+/* Reduce visual noise */
+#sns_mainmenu .sub-menu {
+  margin-top: 6px;
+}

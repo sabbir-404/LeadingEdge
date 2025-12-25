@@ -150,3 +150,19 @@
     font-size: 12px;
   }
 }
+
+
+#sns_header .header-right .inner {
+    float: none;
+}
+@media (max-width: 767px) {
+    #sns_header .menu-sidebar, #sns_header .mini-search, 			#sns_header .mini-wishlist, #sns_header .mini-cart {
+        margin-left: 15px;
+    }
+}
+@media (max-width: 767px) {
+    #sns_header .header-right .btn-navbar {
+        margin-left: 6px;
+    }
+}
+
